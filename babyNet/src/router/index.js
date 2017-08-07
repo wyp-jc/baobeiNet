@@ -7,6 +7,8 @@ import searchPage from '@/views/SearchPage'
 import shopPage from '@/views/ShoppingCart'
 import zoomPage from '@/views/Zoom'
 import groupPage from '@/views/GroupBooking'
+import Login from '@/views/Login'
+import Register from '@/views/Login/register'
 
 Vue.use(Router)
 
@@ -38,6 +40,16 @@ export default new Router({
             path: '/zoomPage',
             name: 'zoomPage',
             component: zoomPage
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: Register
         }
     ]
 })

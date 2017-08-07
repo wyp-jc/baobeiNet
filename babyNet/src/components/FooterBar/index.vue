@@ -6,7 +6,7 @@
   	      <router-link to="/groupPage" class="groupbook" active-class="active"><i class="icon"></i>拼团</router-link>
   	      <router-link to="/goodsPage" class="newgoods" active-class="active"><i class="icon"></i>逛新品</router-link>
           <router-link to="/shopPage" class="shopcar" active-class="active"><i class="icon"></i>购物车</router-link>
-  	      <router-link to="/zoomPage" class="zoom" active-class="active"><i class="icon"></i>我的</router-link>
+  	      <router-link to="/login" class="zoom" active-class="active"><i class="icon"></i>我的</router-link>
   	  </nav>
   </footer>
 </template>

@@ -5,13 +5,17 @@
 </template>
 
 <script>
-import './static/reset.css';
+import './static/reset.css'
+import './static/img/iconfont/iconfont.css'
 export default {
   name: 'app'
 }
 </script>
 
 <style lang="less">
+body{
+  background: #eee;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
