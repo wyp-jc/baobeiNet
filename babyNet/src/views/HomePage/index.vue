@@ -11,7 +11,7 @@
                 </swiper-slide>
 			      </swiper>
             <div class="right-icon">
-                <div class="search"><i class="icon"></i></div> 
+                <div class="search"><a href="/searchPage"><i class="icon"></i></a></div> 
             </div>
 
          </div>

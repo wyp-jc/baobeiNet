@@ -38,6 +38,11 @@ export default new Router({
             path: '/zoomPage',
             name: 'zoomPage',
             component: zoomPage
+        },
+        {
+            path: '/searchPage',
+            name: 'searchPage',
+            component: searchPage
         }
     ]
 })
