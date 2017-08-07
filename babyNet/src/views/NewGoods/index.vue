@@ -1,16 +1,23 @@
 <template>
-     <div class="search-page">
-       搜索页面
+     <div class="goods-page">
+       逛新品special sale
+       
+       
+       <footer-bar></footer-bar> 
      </div>   
 </template>
 
 <script>
+import footerBar from '@/components/FooterBar';
 export default {
-  name: 'searchPage',
+  name:'goodsPage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+     footerBar
   }
 }
 </script>
