@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import './static/reset.css'
+import './static/lib/reset.css'
 import './static/img/iconfont/iconfont.css'
 export default {
   name: 'app'
@@ -16,12 +16,5 @@ export default {
 body{
   background: #eee;
 }
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  
-}
+
 </style>

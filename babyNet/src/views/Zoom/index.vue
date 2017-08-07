@@ -60,16 +60,23 @@
               </li>
           </ul>
       </div>
+      <footer-bar></footer-bar> 
      </div>   
 </template>
 
 <script>
+import footerBar from '@/components/FooterBar';
+
 export default {
   name: 'zoomPage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components:{
+  	footerBar
+  
   }
 }
 </script>
