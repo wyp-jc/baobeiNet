@@ -3,7 +3,7 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 import mockData from './data.js'
-
+import listData from "./data/list";
 console.log(mockData)
 
 
@@ -16,4 +16,13 @@ mock.onGet('/api').reply((config) => {
             resolve([200, mockData]);
         }, 100);
     });
+
 });
+
+mock.onGet("/topList").reply(() => {
+    //数据请求延时
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([200, listData]);
+        }, 100)
+    })

@@ -42,7 +42,6 @@ let router = new Router({
             component: zoomPage
         },
         {
-<<<<<<< HEAD
             path: '/login',
             name: 'login',
             component: Login
@@ -51,11 +50,11 @@ let router = new Router({
             path: '/register',
             name: 'register',
             component: Register
-=======
+        },
+        {
             path: '/searchPage',
             name: 'searchPage',
             component: searchPage
->>>>>>> e67e743e0d2c041ef23f24bbd00a184339e05fe3
         }
     ]
 })
