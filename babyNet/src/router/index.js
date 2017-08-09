@@ -7,11 +7,16 @@ import searchPage from '@/views/SearchPage'
 import shopPage from '@/views/ShoppingCart'
 import zoomPage from '@/views/Zoom'
 import groupPage from '@/views/GroupBooking'
+<<<<<<< HEAD
 import hotDatailPage from '@/views/SearchPage/component/hotDetail'
+=======
+import Login from '@/views/Login'
+import Register from '@/views/Login/register'
+>>>>>>> 2136ecd52f26c2258e88a981e947719fb0e1b19e
 
 Vue.use(Router)
 
-export default new Router({
+let router = new Router({
     mode: "history",
     routes: [{
             path: '/',
@@ -41,14 +46,40 @@ export default new Router({
             component: zoomPage
         },
         {
+<<<<<<< HEAD
+            path: '/login',
+            name: 'login',
+            component: Login
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: Register
+=======
             path: '/searchPage',
             name: 'searchPage',
             component: searchPage
+<<<<<<< HEAD
         },
         {
             path: "/hotDeatilPage",
             name: "hotDatail",
             component: hotDatailPage
+=======
+>>>>>>> e67e743e0d2c041ef23f24bbd00a184339e05fe3
+>>>>>>> 2136ecd52f26c2258e88a981e947719fb0e1b19e
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    // var userinfo = window.sessionStorage.getItem['user']
+    // if (!userinfo && to.path!='/login') {
+    //     next('login')
+    // } else {
+    //     next()
+    // }
+    next()
+})
+
+export default router
