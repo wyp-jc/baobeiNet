@@ -59,6 +59,7 @@
 
             //这边就可以使用swiper这个对象去使用swiper官网中的那些方法  
             this.swiper.slideTo(0, 0, false);
+            //console.log( this.homeList.canrouselData)
         }
 
     }
@@ -67,6 +68,7 @@
 <style scoped lang="less">
     .swiper-box {
         width: 100%;
+        
         .swiper-content {
             width: 100%;
             height: 100%;
@@ -74,7 +76,7 @@
                 width: 100%;
                 img {
                     width: 100%;
-                    height: 10rem;
+                    height: 1.5rem;
                 }
             }
         }

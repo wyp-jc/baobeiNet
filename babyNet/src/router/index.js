@@ -7,8 +7,12 @@ import searchPage from '@/views/SearchPage'
 import shopPage from '@/views/ShoppingCart'
 import zoomPage from '@/views/Zoom'
 import groupPage from '@/views/GroupBooking'
+<<<<<<< HEAD
+import hotDatailPage from '@/views/SearchPage/component/hotDetail'
+=======
 import Login from '@/views/Login'
 import Register from '@/views/Login/register'
+>>>>>>> 2136ecd52f26c2258e88a981e947719fb0e1b19e
 
 Vue.use(Router)
 
@@ -55,6 +59,18 @@ let router = new Router({
             path: '/searchPage',
             name: 'searchPage',
             component: searchPage
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        },
+        {
+            path: "/hotDeatilPage",
+            name: "hotDatail",
+            component: hotDatailPage
+=======
+>>>>>>> e67e743e0d2c041ef23f24bbd00a184339e05fe3
+>>>>>>> 2136ecd52f26c2258e88a981e947719fb0e1b19e
+>>>>>>> b73940717c810af2ec57904d61b9ca74257ccb42
         }
     ]
 })
