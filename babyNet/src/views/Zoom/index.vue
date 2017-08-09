@@ -76,7 +76,6 @@ export default {
   },
   components:{
   	footerBar
-  
   }
 }
 </script>

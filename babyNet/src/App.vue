@@ -15,6 +15,10 @@ export default {
 <style lang="less">
 body{
   background: #eee;
+  box-sizing: border-box;
+}
+#app{
+  box-sizing: border-box;  
 }
 
 </style>

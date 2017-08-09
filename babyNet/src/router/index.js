@@ -12,7 +12,7 @@ import Register from '@/views/Login/register'
 
 Vue.use(Router)
 
-export default new Router({
+let router = new Router({
     mode: "history",
     routes: [{
             path: '/',
@@ -53,3 +53,15 @@ export default new Router({
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    // var userinfo = window.sessionStorage.getItem['user']
+    // if (!userinfo && to.path!='/login') {
+    //     next('login')
+    // } else {
+    //     next()
+    // }
+    next()
+})
+
+export default router
