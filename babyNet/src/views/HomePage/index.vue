@@ -11,7 +11,6 @@
             <div class="right-icon">
                 <div class="search"><a href="/searchPage"><i class="icon"></i></a></div> 
             </div>
-
          </div>
           
   	    </header-bar> 
