@@ -7,6 +7,7 @@ import searchPage from '@/views/SearchPage'
 import shopPage from '@/views/ShoppingCart'
 import zoomPage from '@/views/Zoom'
 import groupPage from '@/views/GroupBooking'
+import hotDatailPage from '@/views/SearchPage/component/hotDetail'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
             path: '/searchPage',
             name: 'searchPage',
             component: searchPage
+        },
+        {
+            path: "/hotDeatilPage",
+            name: "hotDatail",
+            component: hotDatailPage
         }
     ]
 })

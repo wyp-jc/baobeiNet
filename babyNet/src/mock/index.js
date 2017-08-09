@@ -1,10 +1,11 @@
-import Mock from 'mockjs';
+//import Mock from 'mockjs';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 import mockData from './data.js'
-
-console.log(mockData)
+import listData from "./data/list";
+import searchCLassList from "./data/search-class-list";
+//console.log(mockData)
 
 
 //数据拦截
@@ -17,3 +18,19 @@ mock.onGet('/api').reply((config) => {
         }, 100);
     });
 });
+mock.onGet("/topList").reply(() => {
+    //数据请求延时
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([200, listData]);
+        }, 100)
+    })
+})
+mock.onGet("/searchList").reply(() => {
+    //数据请求延时
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([200, searchCLassList]);
+        }, 100)
+    })
+})
